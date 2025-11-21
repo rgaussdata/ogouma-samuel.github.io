@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Ing. OGOUMA Diwilinma Samuel – Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<header>
+    <nav class="navbar">
+        <div class="logo">Samuel OGOUMA</div>
+        <ul class="nav-links">
+            <li><a href="#home">Accueil</a></li>
+            <li><a href="#about">À propos</a></li>
+            <li><a href="#skills">Compétences</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#projects">Projets</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- HERO / ACCUEIL -->
+<section id="home" class="hero">
+    <div class="hero-inner">
+        <!-- Photo (utilise le fichier uploadé) -->
+        <img class="profile-pic" src="/mnt/data/67ce9436-c48e-4ee2-8802-358dfb49d46a.png" alt="Photo Samuel">
+        <div class="hero-text">
+            <h1>Ing. OGOUMA Diwilinma Samuel</h1>
+            <h3>Mathématicien | Ingénieur en Informatique | Consultant-formateur Data & IT</h3>
+            <!-- bouton Me contacter -->
+            <a class="btn-contact" href="#contact">Me contacter</a>
+            <!-- WhatsApp quick button -->
+            <a class="btn-whatsapp" href="https://wa.me/22890239957" target="_blank" rel="noopener">WhatsApp</a>
+            <!-- Télécharger CV - remplace le lien si tu as un fichier -->
+            <a class="btn-cv" href="#" id="download-cv">Télécharger CV</a>
+        </div>
+    </div>
+</section>
+
+<!-- À PROPOS -->
+<section id="about" class="section">
+    <h2>À propos</h2>
+    <p>Je suis actuellement en poste au <strong>Togo DataLab</strong>. Mon parcours en mathématiques et en ingénierie informatique me permet d’intervenir dans la conception, l’analyse et la mise en œuvre de systèmes intelligents et de supervision.</p>
+</section>
+
+<!-- COMPÉTENCES -->
+<section id="skills" class="section">
+    <h2>Compétences</h2>
+    <div class="skills-grid">
+        <div class="skill-box">
+            <h4>Analytique</h4>
+            <p>Expert Excel, Power BI, Superset, R-Shiny, Tableau, Stack ELK, Statistiques avancées</p>
+        </div>
+        <div class="skill-box">
+            <h4>Programmation</h4>
+            <p>Python, R, VBA, C</p>
+        </div>
+        <div class="skill-box">
+            <h4>Bases de données</h4>
+            <p>PostgreSQL, MySQL, MongoDB</p>
+        </div>
+        <div class="skill-box">
+            <h4>Ingestion & Big Data</h4>
+            <p>NiFi, Apache Hadoop</p>
+        </div>
+    </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="section">
+    <h2>Services</h2>
+    <div class="services-grid">
+        <div class="service-box">
+            <h3>Analyse & Conception de Dashboards</h3>
+            <p>Power BI, Tableau, Superset — dashboards interactifs et storytelling data.</p>
+        </div>
+        <div class="service-box">
+            <h3>Systèmes intelligents & Supervision</h3>
+            <p>Architecture de supervision, monitoring, alerting et collecte de métriques.</p>
+        </div>
+        <div class="service-box">
+            <h3>Formations & Coaching</h3>
+            <p>Excel avancé, Power BI, Python pour data, outils ETL et bonnes pratiques.</p>
+        </div>
+    </div>
+</section>
+
+<!-- PROJETS / PORTFOLIO -->
+<section id="projects" class="section">
+    <h2>Projets & Réalisations</h2>
+    <div id="projects-list" class="projects-grid">
+        <!-- Les projets peuvent être ajoutés dynamiquement via le script -->
+    </div>
+
+    <div class="add-project">
+        <h4>Ajouter un projet (local)</h4>
+        <input id="proj-title" placeholder="Titre du projet">
+        <input id="proj-link" placeholder="Lien (optionnel)">
+        <textarea id="proj-desc" placeholder="Courte description"></textarea>
+        <button id="add-project-btn">Ajouter le projet</button>
+    </div>
+</section>
+
+<!-- BLOG / DISCUSSION -->
+<section id="blog" class="section">
+    <h2>Blog & Discussion</h2>
+
+    <div class="new-post">
+        <input id="post-author" placeholder="Votre nom">
+        <input id="post-title" placeholder="Titre du post">
+        <textarea id="post-body" placeholder="Écrivez votre message..."></textarea>
+        <button id="add-post-btn">Publier</button>
+    </div>
+
+    <div id="posts-list" class="posts-list">
+        <!-- posts injectés ici -->
+    </div>
+</section>
+
+<!-- CHAT VISITEURS -->
+<section id="chat" class="section">
+    <h2>Chat visiteurs</h2>
+    <div class="chat-wrap">
+        <div id="chat-window" class="chat-window"></div>
+
+        <div class="chat-controls">
+            <input id="chat-name" placeholder="Votre nom">
+            <input id="chat-input" placeholder="Écrire un message...">
+            <button id="send-chat-btn">Envoyer</button>
+            <button id="clear-chat-btn">Effacer (local)</button>
+        </div>
+    </div>
+
+    <h3>Assistant automatique</h3>
+    <div class="bot-wrap">
+        <div id="bot-window" class="bot-window"></div>
+        <div class="bot-controls">
+            <input id="bot-input" placeholder="Posez une question au chatbot (ex: services, contact, horaires)">
+            <button id="ask-bot-btn">Poser</button>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+    <h2>Contact</h2>
+    <div class="contact-grid">
+        <div class="contact-card">
+            <p>Email : <strong>samuelogouma6@gmail.com</strong></p>
+            <p>Email 2 : <strong>hetech27@gmail.com</strong></p>
+            <p>Tél : <strong>(+228) 90 23 99 57</strong></p>
+            <p>Tél 2 : <strong>(+228) 71 67 60 96</strong></p>
+            <p>Travail : <strong>Togo DataLab</strong></p>
+        </div>
+
+        <form id="contact-form" class="contact-form">
+            <input type="text" id="cname" placeholder="Votre nom" required>
+            <input type="email" id="cemail" placeholder="Votre email" required>
+            <textarea id="cmessage" placeholder="Votre message" required></textarea>
+            <button type="submit">Envoyer</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    <p>© 2025 Ing. OGOUMA Diwilinma Samuel — Tous droits réservés.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
